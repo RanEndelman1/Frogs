@@ -54,13 +54,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gx4-Jz-0pm">
                             <size key="itemSize" width="100" height="100"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="headerReferenceSize" width="50" height="90"/>
                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                         </collectionViewFlowLayout>
                         <cells>
                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="tGn-D0-gV1">
-                                <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                <rect key="frame" x="0.0" y="90" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
@@ -69,12 +69,29 @@
                                 <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                             </collectionViewCell>
                         </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Header" id="2z6-xa-Vh9" userLabel="ScoreAndHitsBoard" customClass="UICollectionViewCell">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fd0-GW-G7Y">
+                                    <rect key="frame" x="149" y="26" width="77.5" height="38.5"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.97960012842336464" green="0.97960012842336464" blue="0.97960012842336464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="Fd0-GW-G7Y" firstAttribute="centerY" secondItem="2z6-xa-Vh9" secondAttribute="centerY" id="007-f0-ReB"/>
+                                <constraint firstItem="Fd0-GW-G7Y" firstAttribute="centerX" secondItem="2z6-xa-Vh9" secondAttribute="centerX" id="RMV-Sf-Pbs"/>
+                            </constraints>
+                        </collectionReusableView>
                         <connections>
                             <outlet property="dataSource" destination="FoS-q9-KMT" id="3vm-tA-fmr"/>
                             <outlet property="delegate" destination="FoS-q9-KMT" id="FKi-XJ-Pap"/>
                         </connections>
                     </collectionView>
-                    <navigationItem key="navigationItem" title="HOME" id="5d5-PD-rdL">
+                    <navigationItem key="navigationItem" id="5d5-PD-rdL">
                         <barButtonItem key="backBarButtonItem" title="Back" id="UOP-Nm-XLJ"/>
                     </navigationItem>
                     <connections>
