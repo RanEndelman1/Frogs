@@ -28,6 +28,7 @@ class CollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
     }
 
+    /* This method called by timer count down the time for the game */
     func updateCounter() {
         if counter > 0 {
             print("00:\(counter)")
@@ -45,16 +46,19 @@ class CollectionViewController: UICollectionViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    /* This method determine number of Sections in the CollectionView */
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         return numOfSections
     }
 
+    /* This method determine number of Cell's in the CollectionView */
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
         return numberOfCells
     }
 
+    /* This method initialize all the CollectionView Cell's */
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as UICollectionViewCell
         var random_number = Int(arc4random_uniform(12) + 1)
@@ -71,6 +75,7 @@ class CollectionViewController: UICollectionViewController {
         return cell
     }
 
+    /* This method initialize the CollectionView Header and Footer */
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
 
@@ -88,6 +93,7 @@ class CollectionViewController: UICollectionViewController {
         }
     }
 
+    /* This method handle click on cell event */
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if isFrogPic(collectionView: collectionView, indexPath: indexPath) {
             score += 1
@@ -103,6 +109,7 @@ class CollectionViewController: UICollectionViewController {
         return collectionView.cellForItem(at: indexPath)?.alpha == 100
     }
 
+    /* This method change all the Cell's background image, called by timerForChangeBackgroundImages */
     func changeBackgroundImage() {
         for cell in collectionView?.visibleCells as! [UICollectionViewCell] {
             var random_number = Int(arc4random_uniform(12) + 1)
@@ -119,6 +126,7 @@ class CollectionViewController: UICollectionViewController {
         }
         print("Changed background")
     }
+
     // MARK: UICollectionViewDelegate
 
 

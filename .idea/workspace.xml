@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="db9910e1-2e5d-43c6-89e3-b316be17b9cc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs.xcodeproj/project.xcworkspace/xcuserdata/RanEndelman.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Frogs.xcodeproj/project.xcworkspace/xcuserdata/RanEndelman.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" afterPath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,14 +18,18 @@
       <file leaf-file-name="CollectionViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="576">
+              <caret line="111" column="99" lean-forward="false" selection-start-line="111" selection-start-column="99" selection-end-line="111" selection-end-column="99" />
               <folding>
-                <element signature="e#976#1257#0" expanded="false" />
-                <element signature="e#1834#2528#0" expanded="false" />
-                <element signature="e#2534#3251#0" expanded="false" />
-                <element signature="e#3681#3838#0" expanded="false" />
-                <element signature="e#3844#4458#0" expanded="false" />
+                <element signature="e#1047#1328#0" expanded="false" />
+                <element signature="e#1334#1480#0" expanded="false" />
+                <element signature="e#1559#1747#0" expanded="false" />
+                <element signature="e#1824#2043#0" expanded="false" />
+                <element signature="e#2112#2806#0" expanded="false" />
+                <element signature="e#2882#3599#0" expanded="false" />
+                <element signature="e#3654#4072#0" expanded="false" />
+                <element signature="e#4078#4235#0" expanded="false" />
+                <element signature="e#4344#4958#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -156,12 +160,12 @@
       <option name="presentableId" value="Default" />
       <updated>1502453724717</updated>
       <workItem from="1502453726478" duration="25941000" />
-      <workItem from="1502619852258" duration="9525000" />
+      <workItem from="1502619852258" duration="9847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35466000" />
+    <option name="totallyTimeSpent" value="35788000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
@@ -173,7 +177,7 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291262" sideWeight="0.42552084" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20194174" sideWeight="0.54583335" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20194174" sideWeight="0.45416668" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20194174" sideWeight="0.45416668" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -206,11 +210,15 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#976#1257#0" expanded="false" />
-            <element signature="e#1834#2528#0" expanded="false" />
-            <element signature="e#2534#3251#0" expanded="false" />
-            <element signature="e#3681#3838#0" expanded="false" />
-            <element signature="e#3844#4458#0" expanded="false" />
+            <element signature="e#1047#1328#0" expanded="false" />
+            <element signature="e#1334#1480#0" expanded="false" />
+            <element signature="e#1559#1747#0" expanded="false" />
+            <element signature="e#1824#2043#0" expanded="false" />
+            <element signature="e#2112#2806#0" expanded="false" />
+            <element signature="e#2882#3599#0" expanded="false" />
+            <element signature="e#3654#4072#0" expanded="false" />
+            <element signature="e#4078#4235#0" expanded="false" />
+            <element signature="e#4344#4958#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -266,14 +274,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        <state relative-caret-position="576">
+          <caret line="111" column="99" lean-forward="false" selection-start-line="111" selection-start-column="99" selection-end-line="111" selection-end-column="99" />
           <folding>
-            <element signature="e#976#1257#0" expanded="false" />
-            <element signature="e#1834#2528#0" expanded="false" />
-            <element signature="e#2534#3251#0" expanded="false" />
-            <element signature="e#3681#3838#0" expanded="false" />
-            <element signature="e#3844#4458#0" expanded="false" />
+            <element signature="e#1047#1328#0" expanded="false" />
+            <element signature="e#1334#1480#0" expanded="false" />
+            <element signature="e#1559#1747#0" expanded="false" />
+            <element signature="e#1824#2043#0" expanded="false" />
+            <element signature="e#2112#2806#0" expanded="false" />
+            <element signature="e#2882#3599#0" expanded="false" />
+            <element signature="e#3654#4072#0" expanded="false" />
+            <element signature="e#4078#4235#0" expanded="false" />
+            <element signature="e#4344#4958#0" expanded="false" />
           </folding>
         </state>
       </provider>
