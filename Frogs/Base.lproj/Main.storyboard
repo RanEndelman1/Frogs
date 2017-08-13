@@ -33,7 +33,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="START"/>
                                 <connections>
-                                    <segue destination="FoS-q9-KMT" kind="show" id="vRh-bq-qZt"/>
+                                    <segue destination="gzr-bz-ebg" kind="show" id="vRh-bq-qZt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -47,10 +47,9 @@
         <!--Home-->
         <scene sceneID="552-ed-MjS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ZxE-Yh-HjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <collectionViewController title="Home" id="FoS-q9-KMT" customClass="CollectionViewController" customModule="Frogs" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" id="xNU-oO-GaT">
-                        <rect key="frame" x="0.0" y="94" width="375" height="573"/>
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" id="xNU-oO-GaT">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Gx4-Jz-0pm">
@@ -75,8 +74,32 @@
                             <outlet property="delegate" destination="FoS-q9-KMT" id="FKi-XJ-Pap"/>
                         </connections>
                     </collectionView>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO"/>
+                    <navigationItem key="navigationItem" title="HOME" id="5d5-PD-rdL">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="UOP-Nm-XLJ"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="gameTitle" destination="5d5-PD-rdL" id="sYp-cC-db7"/>
+                    </connections>
                 </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZxE-Yh-HjF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="276" y="-23.838080959520241"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aJH-df-V2B">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gzr-bz-ebg" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ibq-cS-pdk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FoS-q9-KMT" kind="relationship" relationship="rootViewController" id="hBx-iE-sRL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rRh-fF-N0l" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-663.20000000000005" y="-23.838080959520241"/>
         </scene>
