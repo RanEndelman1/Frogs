@@ -11,7 +11,6 @@ import UIKit
 private let reuseIdentifier = "cell"
 private let numberOfCells = 15
 private let numOfSections = 1
-private let cvch = CollectionViewCellHeader()
 private var score = 0
 private var hits = 3
 private var counter = 60
@@ -19,11 +18,12 @@ private var counter = 60
 class CollectionViewController: UICollectionViewController {
 
     @IBOutlet weak var gameTitle: UINavigationItem!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
         var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-//        initScore()
+
+        var timerForChangeBackgroundImages = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(changeBackgroundImage), userInfo: nil, repeats: true)
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
     }
@@ -33,8 +33,7 @@ class CollectionViewController: UICollectionViewController {
             print("00:\(counter)")
             if counter == 60 {
                 gameTitle.title = "01:00"
-            }
-            else {
+            } else {
                 gameTitle.title = "00:\(counter)"
             }
             counter -= 1
@@ -66,19 +65,34 @@ class CollectionViewController: UICollectionViewController {
         // To determine if it is a frog pic
         if random_number <= 4 {
             cell.alpha = 100
-        }
-        else {
+        } else {
             cell.alpha = 99
         }
         return cell
     }
 
+    override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+
+        case UICollectionElementKindSectionHeader:
+
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Header", for: indexPath)
+            return headerView
+
+        case UICollectionElementKindSectionFooter:
+            let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "Footer", for: indexPath)
+            return footerView
+
+        default:
+            assert(false, "Unexpected element kind")
+        }
+    }
 
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if isFrogPic(collectionView: collectionView, indexPath: indexPath) {
             score += 1
-        }
-        else {
+//            scoreBoard.text = "The score is :" + String(score)
+        } else {
             hits -= 1
         }
         print("The score is :" + String(score))
@@ -89,6 +103,22 @@ class CollectionViewController: UICollectionViewController {
         return collectionView.cellForItem(at: indexPath)?.alpha == 100
     }
 
+    func changeBackgroundImage() {
+        for cell in collectionView?.visibleCells as! [UICollectionViewCell] {
+            var random_number = Int(arc4random_uniform(12) + 1)
+            let image = UIImage(named: String(random_number) + ".jpg")
+            let imageView = UIImageView(image: image!)
+            imageView.image = image
+            cell.backgroundView = imageView
+            // To determine if it is a frog pic
+            if random_number <= 4 {
+                cell.alpha = 100
+            } else {
+                cell.alpha = 99
+            }
+        }
+        print("Changed background")
+    }
     // MARK: UICollectionViewDelegate
 
 
