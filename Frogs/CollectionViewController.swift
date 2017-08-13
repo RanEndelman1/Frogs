@@ -18,21 +18,25 @@ private var counter = 60
 
 class CollectionViewController: UICollectionViewController {
 
+    @IBOutlet weak var gameTitle: UINavigationItem!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
-        navigationItem.title = "Home"
-
 //        initScore()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
     }
 
     func updateCounter() {
-        //you code, this is an example
         if counter > 0 {
-            print("\(counter) seconds to the end of the world")
+            print("00:\(counter)")
+            if counter == 60 {
+                gameTitle.title = "01:00"
+            }
+            else {
+                gameTitle.title = "00:\(counter)"
+            }
             counter -= 1
         }
     }
