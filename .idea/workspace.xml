@@ -1,15 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db9910e1-2e5d-43c6-89e3-b316be17b9cc" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs.xcodeproj/project.xcworkspace/xcuserdata/RanEndelman.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/Frogs.xcodeproj/project.xcworkspace/xcuserdata/RanEndelman.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Frogs.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/AppIcon.appiconset/Contents.json" afterPath="$PROJECT_DIR$/Frogs/Assets.xcassets/AppIcon.appiconset/Contents.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/Frogs/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" afterPath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/ViewController.swift" afterPath="$PROJECT_DIR$/Frogs/ViewController.swift" />
-    </list>
+    <list default="true" id="db9910e1-2e5d-43c6-89e3-b316be17b9cc" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -181,12 +173,12 @@
       <updated>1502453724717</updated>
       <workItem from="1502453726478" duration="25941000" />
       <workItem from="1502619852258" duration="10926000" />
-      <workItem from="1502642400421" duration="4970000" />
+      <workItem from="1502642400421" duration="5053000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41837000" />
+    <option name="totallyTimeSpent" value="41920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
