@@ -14,14 +14,27 @@ private let numOfSections = 1
 private let cvch = CollectionViewCellHeader()
 private var score = 0
 private var hits = 3
+private var counter = 60
 
 class CollectionViewController: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        var timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+        navigationItem.title = "Home"
+
 //        initScore()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+    }
+
+    func updateCounter() {
+        //you code, this is an example
+        if counter > 0 {
+            print("\(counter) seconds to the end of the world")
+            counter -= 1
+        }
     }
 
     override func didReceiveMemoryWarning() {
