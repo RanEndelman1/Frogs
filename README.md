@@ -1,1 +1,1 @@
-A simple iOS game for scholl asignment by Ran Endelman
+A simple iOS game for school asignment by Ran Endelman
