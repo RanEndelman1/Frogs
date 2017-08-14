@@ -8,21 +8,23 @@
 
 import UIKit
 
-private let reuseIdentifier = "cell"
-private let numberOfCells = 15
-private let numOfSections = 1
-private var score = 0
-private var hits = 3
-private var counter = 60
-private var timer: Timer?
-private var timerForChangeBackgroundImages: Timer?
 
 class CollectionViewController: UICollectionViewController {
+
+    private let reuseIdentifier = "cell"
+    private let numberOfCells = 15
+    private let numOfSections = 1
+    private var score = 0
+    private var hits = 3
+    private var counter = 60
+    private var timer: Timer?
+    private var timerForChangeBackgroundImages: Timer?
 
     @IBOutlet weak var gameTitle: UINavigationItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
 
         timerForChangeBackgroundImages = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(changeBackgroundImage), userInfo: nil, repeats: true)
@@ -108,7 +110,7 @@ class CollectionViewController: UICollectionViewController {
 
     /* This method return back to the root viewController */
     func finishGame() {
-        _ = navigationController?.popToRootViewController(animated: true)
+        self.dismiss(animated: true)
     }
 
     /* This method called by timer count down the time for the game */
