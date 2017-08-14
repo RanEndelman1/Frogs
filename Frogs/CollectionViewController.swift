@@ -26,6 +26,7 @@ class CollectionViewController: UICollectionViewController {
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
 
         timerForChangeBackgroundImages = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(changeBackgroundImage), userInfo: nil, repeats: true)
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
     }
@@ -86,9 +87,17 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if isFrogPic(collectionView: collectionView, indexPath: indexPath) {
             score += 1
+            let header = collectionView.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: indexPath)
+            let scoreLabel = collectionView.viewWithTag(1) as! UILabel
+            scoreLabel.text = "Score: \(score)"
+
 //            scoreBoard.text = "The score is :" + String(score)
         } else {
             hits -= 1
+            if hits > -1 {
+                let hitsLabel = collectionView.viewWithTag(2) as! UILabel
+                hitsLabel.text = "Hits: \(hits)"
+            }
             if hits < 0 {
                 showEndOfGameAlert(title: "Game Over! You are out of Hits!")
             }
@@ -127,7 +136,7 @@ class CollectionViewController: UICollectionViewController {
     /* This method generate and show no more hits alert */
     func showEndOfGameAlert(title: String) {
         let alert = UIAlertController(title: title, message: "Your score is: \(score)", preferredStyle: UIAlertControllerStyle.alert)
-        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: {(alert: UIAlertAction!) in self.finishGame()})
+        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (alert: UIAlertAction!) in self.finishGame() })
         alert.addAction(okButton)
         present(alert, animated: true, completion: nil)
     }
