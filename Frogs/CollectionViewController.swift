@@ -16,7 +16,7 @@ class CollectionViewController: UICollectionViewController {
     private let numOfSections = 1
     private var score = 0
     private var hits = 3
-    private var counter = 60
+    private var counter = 30
     private var timer: Timer?
     private var timerForChangeBackgroundImages: Timer?
 
@@ -92,15 +92,13 @@ class CollectionViewController: UICollectionViewController {
             let header = collectionView.supplementaryView(forElementKind: UICollectionElementKindSectionHeader, at: indexPath)
             let scoreLabel = collectionView.viewWithTag(1) as! UILabel
             scoreLabel.text = "Score: \(score)"
-
-//            scoreBoard.text = "The score is :" + String(score)
         } else {
             hits -= 1
-            if hits > -1 {
+            if hits >= 0 {
                 let hitsLabel = collectionView.viewWithTag(2) as! UILabel
                 hitsLabel.text = "Hits: \(hits)"
             }
-            if hits < 0 {
+            else {
                 showEndOfGameAlert(title: "Game Over! You are out of Hits!")
             }
         }
