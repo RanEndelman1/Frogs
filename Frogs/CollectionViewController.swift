@@ -8,8 +8,10 @@
 
 import UIKit
 import Firebase
+import MapKit
+import CoreLocation
 
-class CollectionViewController: UICollectionViewController {
+class CollectionViewController: UICollectionViewController, CLLocationManagerDelegate {
 
     private let reuseIdentifier = "cell"
     private let numberOfCells = 15
@@ -20,6 +22,8 @@ class CollectionViewController: UICollectionViewController {
     private var timer: Timer?
     private var timerForChangeBackgroundImages: Timer?
     private var db: DataBase?
+    private let locationManager = CLLocationManager()
+    private var currLocation : CLLocation!
 
     @IBOutlet weak var gameTitle: UINavigationItem!
 
@@ -32,8 +36,20 @@ class CollectionViewController: UICollectionViewController {
 
         timerForChangeBackgroundImages = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(changeBackgroundImage), userInfo: nil, repeats: true)
 
+        locationManager.delegate = self
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+
+
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
+    }
+
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        currLocation = locations[0]
+
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -110,7 +126,7 @@ class CollectionViewController: UICollectionViewController {
 
     /* This method return back to the root viewController */
     func finishGame(name: String) {
-        insertScore(score: "\(score)", name: name)
+        insertScore(score: score, name: name, long: self.currLocation.coordinate.longitude, lat: self.currLocation.coordinate.latitude)
         self.dismiss(animated: true)
     }
 
@@ -194,8 +210,8 @@ class CollectionViewController: UICollectionViewController {
     }
 
     /* This method calls DB class API */
-    func insertScore(score: String, name: String) {
-        db?.insertScore(score: score, name: name)
+    func insertScore(score: Int, name: String, long: Double, lat: Double) {
+        db?.insertScore(score: score, name: name, long: long, lat: lat)
     }
 
     // MARK: UICollectionViewDelegate

@@ -9,54 +9,40 @@ import Foundation
 
 class DataBase {
     var ref: DatabaseReference!
-    var recordsDic: [String: String]!
+    var recordsArr: [[String: Any]]!
 
     init() {
         self.ref = Database.database().reference()
-        self.getRecordsDic()
 
     }
 
 
     /* This method insert the score to the scores top 10 table in FireBase DB */
-    func insertScore(score: String, name: String) {
-        getRecordsListAndInsert(score: score, name: name)
+    func insertScore(score: Int, name: String, long: Double, lat: Double) {
+        getRecordsListAndInsert(score: score, name: name, long: long, lat: lat)
     }
 
     /* This method get the records list from the FireBase DB */
-    func getRecordsListAndInsert(score: String, name: String) {
+    func getRecordsListAndInsert(score: Int, name: String, long: Double, lat: Double) {
         self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
-            var dic = snapshot.value as? [String: String]
-            if dic![score] == nil {
-                dic![score] = name
+            var arr = snapshot.value as? [[String: Any]]
+            var record = Record(score: score, name: name, long: long, lat: lat)
+            if arr!.count < 10 {
+                arr!.append(record.dict)
+                self.ref.child("highScores").setValue(arr)
             } else {
-                var oldName = dic![score]
-                dic![score] = oldName! + ", " + name
+                var sortedArr = arr!.sorted(by: { ($0["score"] as! Int) > ($1["score"] as! Int) })
+                var lastDic: [String: Any] = sortedArr[9]
+                if (lastDic["score"] as! Int) < score {
+                    sortedArr.append(record.dict)
+                    sortedArr = sortedArr.sorted(by: { ($0["score"] as! Int) > ($1["score"] as! Int) })
+                    sortedArr.remove(at: 10)
+                    self.ref.child("highScores").setValue(sortedArr)
+                }
             }
-            self.ref.child("highScores").setValue(dic)
-
         }) { (error) in
             print(error.localizedDescription)
         }
     }
 
-//    func getRecordsDic() {
-//        self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
-//            var dic = snapshot.value as? [String: String]
-//            self.recordsDic = dic
-//
-//        }) { (error) in
-//            print(error.localizedDescription)
-//        }
-//    }
-
-    func getRecordsDic() {
-        var counter = 0
-        self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
-            var dic = snapshot.value as? [String: String]
-            self.recordsDic = dic
-
-        })
-
-    }
 }

@@ -12,7 +12,7 @@ import FirebaseDatabase
 class RecordsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
 
-    private var recordsDic: [String: String]!
+    private var recordsArr: [[String: Any]]!
     private var ref: DatabaseReference!
     private var sortedKeys: Array<String> = []
     private var sortedKeysInt: Array<Int> = []
@@ -28,22 +28,23 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.recordsDic == nil {
+        if self.recordsArr == nil {
             return 1
         } else {
-            return self.recordsDic.count
+            return self.recordsArr.count
         }
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mycell")
 
-        if self.recordsDic == nil {
+        if self.recordsArr == nil {
             cell.textLabel!.text = ""
         } else {
-            var currKey = "\(sortedKeysInt[indexPath.row])"
-            var player = self.recordsDic?[currKey] as? String
-            cell.textLabel!.text = "\(indexPath.row + 1). "  + currKey + " Points By: " + player!
+//            var currKey = "\(sortedKeysInt[indexPath.row])"
+//            var player = self.recordsDic?[currKey] as? String
+            var currDic: [String: Any] = recordsArr[indexPath.row]
+            cell.textLabel!.text = "\(indexPath.row + 1). " + "\(currDic["score"]!)" + " Points By: " + "\(currDic["name"]!)"
         }
 
         return cell
@@ -51,13 +52,13 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
 
     func getRecordsDic() {
         self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
-            self.recordsDic = snapshot.value as? [String: String]
-            var recordCount = self.recordsDic.count
-            self.sortedKeysInt = [Int]()
-            for (index, element) in Array(self.recordsDic.keys).enumerated() {
-                self.sortedKeysInt.append(Int(element)!)
-            }
-            self.sortedKeysInt = self.sortedKeysInt.sorted(by: >)
+            self.recordsArr = snapshot.value as? [[String: Any]]
+//            var recordCount = self.recordsDic.count
+//            self.sortedKeysInt = [Int]()
+//            for (index, element) in Array(self.recordsDic.keys).enumerated() {
+//                self.sortedKeysInt.append(Int(element)!)
+//            }
+//            self.sortedKeysInt = self.sortedKeysInt.sorted(by: >)
             self.tableView.reloadData()
         })
 
