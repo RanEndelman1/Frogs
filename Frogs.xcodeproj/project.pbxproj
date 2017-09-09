@@ -16,6 +16,7 @@
 		6182056527253A43AE191D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6182034CF661AFB7885F5602 /* Assets.xcassets */; };
 		618207A8D9081775B7E2A27C /* FrogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618200E8457D4AAF6848328A /* FrogsTests.swift */; };
 		61820983BB8F8DA17277C6E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618202164072206ABDF75049 /* AppDelegate.swift */; };
+		61820E57E7D8265847D72EE0 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182091EB796F8596D23086D /* DataBase.swift */; };
 		64D072309D46B6338F92D1D3 /* Pods_FrogsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B2BF281681D788BAE896FA /* Pods_FrogsTests.framework */; };
 		902942C51F3DE05B00FAC1D5 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902942C41F3DE05B00FAC1D5 /* CollectionViewController.swift */; };
 		902942D41F3F46E000FAC1D5 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 902942D01F3F46E000FAC1D5 /* 3.jpg */; };
@@ -31,7 +32,8 @@
 		902942E61F3F49F700FAC1D5 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 902942DE1F3F49F700FAC1D5 /* 9.jpg */; };
 		902942E71F3F49F700FAC1D5 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 902942DF1F3F49F700FAC1D5 /* 5.jpg */; };
 		902942E91F40D2B800FAC1D5 /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 902942E81F40D2B800FAC1D5 /* background.jpg */; };
-		906EC4C81F58455100575D4F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 906EC4C71F58455100575D4F /* GoogleService-Info.plist */; };
+		9062DDF51F598F430001966F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9062DDF41F598F430001966F /* GoogleService-Info.plist */; };
+		9062DDF71F62D71F0001966F /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9062DDF61F62D71F0001966F /* RecordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 		61820580F9200795B663EB45 /* FrogsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrogsUITests.swift; sourceTree = "<group>"; };
 		618205A5A161C710A577C108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6182067D111D3D46C13F9E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		6182091EB796F8596D23086D /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		618209AF792D98AC7DA39665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		61820DA499C92F1BA51DB915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61820EEB155D2E65EAB157F7 /* FrogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,7 +88,8 @@
 		902942DE1F3F49F700FAC1D5 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 9.jpg; path = Frogs/Assets.xcassets/9.jpg; sourceTree = "<group>"; };
 		902942DF1F3F49F700FAC1D5 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpg; path = Frogs/Assets.xcassets/5.jpg; sourceTree = "<group>"; };
 		902942E81F40D2B800FAC1D5 /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = ../../animals/background.jpg; sourceTree = "<group>"; };
-		906EC4C71F58455100575D4F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9062DDF41F598F430001966F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9062DDF61F62D71F0001966F /* RecordsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 		986A22163640FC5721A8AC47 /* Pods-FrogsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrogsTests/Pods-FrogsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		A0E522EF7588F8E6D0D576A5 /* Pods_FrogsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FrogsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F90EF9A3186A86D30C5CD34F /* Pods-FrogsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FrogsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FrogsUITests/Pods-FrogsUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +149,7 @@
 		618204F069FD4765CB8A05A2 = {
 			isa = PBXGroup;
 			children = (
+				9062DDF41F598F430001966F /* GoogleService-Info.plist */,
 				902942D81F3F49F700FAC1D5 /* 12.jpg */,
 				902942D91F3F49F700FAC1D5 /* 10.jpg */,
 				902942DA1F3F49F700FAC1D5 /* 11.jpg */,
@@ -178,15 +183,16 @@
 		6182085E5A71FCD6E87951AD /* Frogs */ = {
 			isa = PBXGroup;
 			children = (
-				906EC4C71F58455100575D4F /* GoogleService-Info.plist */,
 				618204D3D6CBA781BF565D43 /* Info.plist */,
 				6182034CF661AFB7885F5602 /* Assets.xcassets */,
 				6182001891F1BAC9DCDCD290 /* LaunchScreen.storyboard */,
 				618202164072206ABDF75049 /* AppDelegate.swift */,
+				9062DDF61F62D71F0001966F /* RecordsViewController.swift */,
 				61820BD3707D7A5FA71F2181 /* Main.storyboard */,
 				902942E81F40D2B800FAC1D5 /* background.jpg */,
 				618205A5A161C710A577C108 /* ViewController.swift */,
 				902942C41F3DE05B00FAC1D5 /* CollectionViewController.swift */,
+				6182091EB796F8596D23086D /* DataBase.swift */,
 			);
 			path = Frogs;
 			sourceTree = "<group>";
@@ -324,7 +330,7 @@
 				902942E21F3F49F700FAC1D5 /* 11.jpg in Resources */,
 				902942E61F3F49F700FAC1D5 /* 9.jpg in Resources */,
 				6182022BB5A6266F3F5445BE /* LaunchScreen.storyboard in Resources */,
-				906EC4C81F58455100575D4F /* GoogleService-Info.plist in Resources */,
+				9062DDF51F598F430001966F /* GoogleService-Info.plist in Resources */,
 				902942D71F3F46E000FAC1D5 /* 4.jpg in Resources */,
 				902942E91F40D2B800FAC1D5 /* background.jpg in Resources */,
 				618202F9EEF309B6D3F55235 /* Main.storyboard in Resources */,
@@ -471,11 +477,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Frogs/Pods-Frogs-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +516,8 @@
 				902942C51F3DE05B00FAC1D5 /* CollectionViewController.swift in Sources */,
 				61820983BB8F8DA17277C6E3 /* AppDelegate.swift in Sources */,
 				618201A29B5791DE662B935C /* ViewController.swift in Sources */,
+				61820E57E7D8265847D72EE0 /* DataBase.swift in Sources */,
+				9062DDF71F62D71F0001966F /* RecordsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
