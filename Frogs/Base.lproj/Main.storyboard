@@ -104,10 +104,10 @@
             </objects>
             <point key="canvasLocation" x="432.80000000000001" y="-879.31034482758628"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="tcN-Jk-Eyy">
             <objects>
-                <viewController id="526-Sa-LjS" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MapViewController" id="526-Sa-LjS" customClass="MapViewController" customModule="Frogs" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1MH-zO-lld"/>
                         <viewControllerLayoutGuide type="bottom" id="hWP-oo-Hnn"/>
@@ -120,6 +120,14 @@
                                 <rect key="frame" x="0.0" y="85" width="375" height="582"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ztq-hR-NmM">
+                                <rect key="frame" x="117" y="20" width="140" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back To Score Table"/>
+                                <connections>
+                                    <segue destination="HZy-Md-PB7" kind="show" id="rZj-x2-Zsd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -209,4 +217,7 @@
             <point key="canvasLocation" x="-857" y="-38"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rZj-x2-Zsd"/>
+    </inferredMetricsTieBreakers>
 </document>

@@ -53,15 +53,15 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
     func getRecordsDic() {
         self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
             self.recordsArr = snapshot.value as? [[String: Any]]
-//            var recordCount = self.recordsDic.count
-//            self.sortedKeysInt = [Int]()
-//            for (index, element) in Array(self.recordsDic.keys).enumerated() {
-//                self.sortedKeysInt.append(Int(element)!)
-//            }
-//            self.sortedKeysInt = self.sortedKeysInt.sorted(by: >)
             self.tableView.reloadData()
         })
 
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let newView: MapViewController = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+        self.present(newView, animated: true, completion: nil)
+
+    }
 }
