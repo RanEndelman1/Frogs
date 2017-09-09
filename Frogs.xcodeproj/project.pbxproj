@@ -16,6 +16,7 @@
 		6182056527253A43AE191D2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6182034CF661AFB7885F5602 /* Assets.xcassets */; };
 		6182068026AF6150E475E6A7 /* Record.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182002B9A3876B66DDDE62F /* Record.swift */; };
 		618207A8D9081775B7E2A27C /* FrogsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618200E8457D4AAF6848328A /* FrogsTests.swift */; };
+		6182093216A7A63D34B4B15B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61820C938FCBCF04F39DBE14 /* MapViewController.swift */; };
 		61820983BB8F8DA17277C6E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618202164072206ABDF75049 /* AppDelegate.swift */; };
 		61820E57E7D8265847D72EE0 /* DataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6182091EB796F8596D23086D /* DataBase.swift */; };
 		64D072309D46B6338F92D1D3 /* Pods_FrogsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82B2BF281681D788BAE896FA /* Pods_FrogsTests.framework */; };
@@ -72,6 +73,7 @@
 		6182067D111D3D46C13F9E29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
 		6182091EB796F8596D23086D /* DataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataBase.swift; sourceTree = "<group>"; };
 		618209AF792D98AC7DA39665 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		61820C938FCBCF04F39DBE14 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		61820DA499C92F1BA51DB915 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61820EEB155D2E65EAB157F7 /* FrogsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrogsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7110DD3EA1E5CEB7A7F49CCB /* Pods_Frogs.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Frogs.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -199,6 +201,7 @@
 				902942C41F3DE05B00FAC1D5 /* CollectionViewController.swift */,
 				6182091EB796F8596D23086D /* DataBase.swift */,
 				6182002B9A3876B66DDDE62F /* Record.swift */,
+				61820C938FCBCF04F39DBE14 /* MapViewController.swift */,
 			);
 			path = Frogs;
 			sourceTree = "<group>";
@@ -526,6 +529,7 @@
 				61820E57E7D8265847D72EE0 /* DataBase.swift in Sources */,
 				9062DDF71F62D71F0001966F /* RecordsViewController.swift in Sources */,
 				6182068026AF6150E475E6A7 /* Record.swift in Sources */,
+				6182093216A7A63D34B4B15B /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
