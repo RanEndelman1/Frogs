@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import Firebase
 
 class CollectionViewController: UICollectionViewController {
 
@@ -19,11 +19,14 @@ class CollectionViewController: UICollectionViewController {
     private var counter = 30
     private var timer: Timer?
     private var timerForChangeBackgroundImages: Timer?
+    private var db: DataBase?
 
     @IBOutlet weak var gameTitle: UINavigationItem!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        db = DataBase()
 
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
 
@@ -97,8 +100,7 @@ class CollectionViewController: UICollectionViewController {
             if hits >= 0 {
                 let hitsLabel = collectionView.viewWithTag(2) as! UILabel
                 hitsLabel.text = "Hits: \(hits)"
-            }
-            else {
+            } else {
                 showEndOfGameAlert(title: "Game Over! You are out of Hits!")
             }
         }
@@ -107,7 +109,8 @@ class CollectionViewController: UICollectionViewController {
     }
 
     /* This method return back to the root viewController */
-    func finishGame() {
+    func finishGame(name: String) {
+        insertScore(score: "\(score)", name: name)
         self.dismiss(animated: true)
     }
 
@@ -133,12 +136,27 @@ class CollectionViewController: UICollectionViewController {
         }
     }
 
-    /* This method generate and show no more hits alert */
+    /* This method generate and show no more hits alert and call insert to DB method */
     func showEndOfGameAlert(title: String) {
-        let alert = UIAlertController(title: title, message: "Your score is: \(score)", preferredStyle: UIAlertControllerStyle.alert)
-        let okButton = UIAlertAction(title: "OK", style: UIAlertActionStyle.cancel, handler: { (alert: UIAlertAction!) in self.finishGame() })
-        alert.addAction(okButton)
-        present(alert, animated: true, completion: nil)
+        let alertController = UIAlertController(title: title, message: "Your score is: \(score)", preferredStyle: .alert)
+
+        let saveAction = UIAlertAction(title: "Save", style: .default, handler: {
+            alert -> Void in
+
+            let firstTextField = alertController.textFields![0] as UITextField
+            self.finishGame(name: firstTextField.text!)
+
+        })
+
+        alertController.addTextField { (textField: UITextField!) -> Void in
+            textField.placeholder = "Enter Your Name"
+        }
+
+        alertController.addAction(saveAction)
+
+
+        self.present(alertController, animated: true, completion: nil)
+
     }
 
     /* This method determine if the cell clicked contain frog image */
@@ -173,6 +191,11 @@ class CollectionViewController: UICollectionViewController {
         timer = nil
         timerForChangeBackgroundImages?.invalidate()
         timerForChangeBackgroundImages = nil
+    }
+
+    /* This method calls DB class API */
+    func insertScore(score: String, name: String) {
+        db?.insertScore(score: score, name: name)
     }
 
     // MARK: UICollectionViewDelegate
