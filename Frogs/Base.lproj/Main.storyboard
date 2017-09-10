@@ -75,7 +75,7 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <state key="normal" title="Back To Main Menu"/>
                                     <connections>
-                                        <segue destination="BYZ-38-t0r" kind="show" id="rQM-vC-AB4"/>
+                                        <segue destination="BYZ-38-t0r" kind="show" identifier="segue2" id="rQM-vC-AB4"/>
                                     </connections>
                                 </button>
                                 <prototypes>
