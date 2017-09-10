@@ -16,7 +16,6 @@ class DataBase {
 
     }
 
-
     /* This method insert the score to the scores top 10 table in FireBase DB */
     func insertScore(score: Int, name: String, long: Double, lat: Double) {
         getRecordsListAndInsert(score: score, name: name, long: long, lat: lat)

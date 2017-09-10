@@ -28,6 +28,8 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Hi! i want to give a pick in your camera roll!</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Hi! i want to know where are you!</string>
 	<key>UIRequiredDeviceCapabilities</key>
