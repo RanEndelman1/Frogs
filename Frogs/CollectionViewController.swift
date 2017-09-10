@@ -23,7 +23,8 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     private var timerForChangeBackgroundImages: Timer?
     private var db: DataBase?
     private let locationManager = CLLocationManager()
-    private var currLocation : CLLocation!
+    private var currLocation: CLLocation!
+    var usersImage: UIImage?
 
     @IBOutlet weak var gameTitle: UINavigationItem!
 
@@ -46,10 +47,9 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         // self.clearsSelectionOnViewWillAppear = false
     }
 
+    /* This method take current location */
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         currLocation = locations[0]
-
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -72,13 +72,23 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     /* This method initialize all the CollectionView Cell's */
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as UICollectionViewCell
-        var random_number = Int(arc4random_uniform(12) + 1)
-        let image = UIImage(named: String(random_number) + ".jpg")
+        var randomNumber = Int(arc4random_uniform(12) + 1)
+        var image: UIImage?
+        if self.usersImage == nil {
+            image = UIImage(named: String(randomNumber) + ".jpg")
+        } else {
+            if randomNumber <= 4 {
+                image = self.usersImage
+            }
+            else {
+                image = UIImage(named: String(randomNumber) + ".jpg")
+            }
+        }
         let imageView = UIImageView(image: image!)
         imageView.image = image
         cell.backgroundView = imageView
         // To determine if it is a frog pic
-        if random_number <= 4 {
+        if randomNumber <= 4 {
             cell.alpha = 100
         } else {
             cell.alpha = 99
@@ -136,13 +146,14 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
             stopTimers()
         }
         if counter >= 0 {
+            let timerLabel = collectionView!.viewWithTag(3) as! UILabel
             print("00:\(counter)")
             if counter == 60 {
-                gameTitle.title = "01:00"
+                timerLabel.text = "01:00"
             } else if counter < 10 {
-                gameTitle.title = "00:0\(counter)"
+                timerLabel.text = "00:0\(counter)"
             } else {
-                gameTitle.title = "00:\(counter)"
+                timerLabel.text = "00:\(counter)"
             }
             counter -= 1
         } else {
@@ -186,19 +197,28 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
             stopTimers()
         }
         for cell in collectionView?.visibleCells as! [UICollectionViewCell] {
-            var random_number = Int(arc4random_uniform(12) + 1)
-            let image = UIImage(named: String(random_number) + ".jpg")
+            var randomNumber = Int(arc4random_uniform(12) + 1)
+            var image: UIImage?
+            if self.usersImage == nil {
+                image = UIImage(named: String(randomNumber) + ".jpg")
+            } else {
+                if randomNumber <= 4 {
+                    image = self.usersImage
+                }
+                else {
+                    image = UIImage(named: String(randomNumber) + ".jpg")
+                }
+            }
             let imageView = UIImageView(image: image!)
             imageView.image = image
             cell.backgroundView = imageView
             // To determine if it is a frog pic
-            if random_number <= 4 {
+            if randomNumber <= 4 {
                 cell.alpha = 100
             } else {
                 cell.alpha = 99
             }
         }
-        print("Changed background")
     }
 
     /* This method stop the two timers */
