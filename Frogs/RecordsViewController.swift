@@ -70,7 +70,9 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //        super.prepare(for: segue, sender: sender)
-        var mapViewController = segue.destination as! MapViewController
-        mapViewController.clickedRow = self.clickedRow
+        if clickedRow != -1 {
+            var mapViewController = segue.destination as! MapViewController
+            mapViewController.clickedRow = self.clickedRow
+        }
     }
 }

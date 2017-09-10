@@ -31,6 +31,9 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             let region:MKCoordinateRegion = MKCoordinateRegionMake(recordLocation, span)
             self.map.setRegion(region, animated: true)
             self.map.showsUserLocation = true
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
+            self.map.addAnnotation(annotation)
             self.map.showsCompass = true
         }) { (error) in
             print(error.localizedDescription)
