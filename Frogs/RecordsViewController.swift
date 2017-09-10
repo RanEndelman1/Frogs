@@ -16,6 +16,7 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
     private var ref: DatabaseReference!
     private var sortedKeys: Array<String> = []
     private var sortedKeysInt: Array<Int> = []
+    private var clickedRow: Int = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,9 +60,17 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let newView: MapViewController = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
-        self.present(newView, animated: true, completion: nil)
+//        let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+//        let newView: MapViewController = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController") as! MapViewController
+//        self.present(newView, animated: true, completion: nil)
+        self.clickedRow = indexPath.row
+        performSegue(withIdentifier: "segue", sender: self)
 
+    }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        super.prepare(for: segue, sender: sender)
+        var mapViewController = segue.destination as! MapViewController
+        mapViewController.clickedRow = self.clickedRow
     }
 }
