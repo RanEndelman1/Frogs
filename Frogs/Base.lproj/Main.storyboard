@@ -98,6 +98,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="GtY-dd-S4b" id="P8h-ZH-0qO"/>
+                        <segue destination="526-Sa-LjS" kind="show" identifier="segue" id="LNv-ol-LgR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yDN-xT-oeQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -131,6 +132,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="6lI-4K-eCH" id="dbN-eg-9nK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XQJ-Xd-gSt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
