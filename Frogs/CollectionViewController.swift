@@ -18,7 +18,7 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     private let numOfSections = 1
     private var score = 0
     private var hits = 3
-    private var counter = 30
+    private var time = 30
     private var timer: Timer?
     private var timerForChangeBackgroundImages: Timer?
     private var db: DataBase?
@@ -130,6 +130,7 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
                 showEndOfGameAlert(title: "Game Over! You are out of Hits!")
             }
         }
+        collectionView.cellForItem(at: indexPath)?.isUserInteractionEnabled = false
         print("The score is :" + String(score))
         print("The hits is :" + String(hits))
     }
@@ -145,22 +146,22 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         if hits < 0 {
             stopTimers()
         }
-        if counter >= 0 {
+        if time >= 0 {
             let timerLabel = collectionView!.viewWithTag(3) as! UILabel
-            print("00:\(counter)")
-            if counter == 60 {
+            print("00:\(time)")
+            if time == 60 {
                 timerLabel.text = "01:00"
-            } else if counter < 10 {
-                timerLabel.text = "00:0\(counter)"
+            } else if time < 10 {
+                timerLabel.text = "00:0\(time)"
             } else {
-                timerLabel.text = "00:\(counter)"
+                timerLabel.text = "00:\(time)"
             }
-            counter -= 1
         } else {
             print("OUT OF TIME!")
             stopTimers()
             showEndOfGameAlert(title: "You are out of time!")
         }
+        time -= 1
     }
 
     /* This method generate and show no more hits alert and call insert to DB method */
@@ -174,7 +175,7 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
             self.finishGame(name: firstTextField.text!)
 
         })
-
+//        HERE SHOULD BE CONDITION IF THE SCORE GOOD ENOUGH FOR THE RECORD TABLE
         alertController.addTextField { (textField: UITextField!) -> Void in
             textField.placeholder = "Enter Your Name"
         }
@@ -193,10 +194,8 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
 
     /* This method change all the Cell's background image, called by timerForChangeBackgroundImages */
     func changeBackgroundImage() {
-        if counter <= 0 || hits < 0 {
-            stopTimers()
-        }
         for cell in collectionView?.visibleCells as! [UICollectionViewCell] {
+            cell.isUserInteractionEnabled = true
             var randomNumber = Int(arc4random_uniform(12) + 1)
             var image: UIImage?
             if self.usersImage == nil {
