@@ -10,8 +10,11 @@ import UIKit
 
 
 class ViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
+    @IBOutlet weak var lastScoreLabel: UILabel!
 
     private var usersImage: UIImage?
+
+    private var key: String = "LASTSCORE"
 
     @IBAction func uploadPicButton(_ sender: UIButton) {
         let image = UIImagePickerController()
@@ -23,6 +26,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setLastScore()
         // Do any additional setup after loading the view, typically from a nib.
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
         backgroundImage.image = UIImage(named: "background.jpg")
@@ -49,5 +53,12 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         }
     }
 
-
+    /* This method get the user last score */
+    func setLastScore() {
+        let defaults = UserDefaults.standard
+        var lastScore = defaults.integer(forKey: self.key)
+        if lastScore != nil {
+           lastScoreLabel.text = "Your last score was: \(lastScore)"
+        }
+    }
 }

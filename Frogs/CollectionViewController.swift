@@ -26,6 +26,7 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     private let locationManager = CLLocationManager()
     private var currLocation: CLLocation!
     private var ref: DatabaseReference!
+    private var key: String = "LASTSCORE"
     var rotation: CGFloat = CGFloat.pi
     var usersImage: UIImage?
     var lowestScore: Int = -1
@@ -191,7 +192,9 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     /* This method return back to the root viewController */
     func finishGame(name: String) {
         insertScore(score: score, name: name, long: self.currLocation.coordinate.longitude, lat: self.currLocation.coordinate.latitude)
-        self.dismiss(animated: true)
+        saveLastScore(score: score)
+//        self.dismiss(animated: true)
+        performSegue(withIdentifier: "showMenu", sender: self)
     }
 
     /* This method determine if the cell clicked contain frog image */
@@ -248,12 +251,19 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         db?.insertScore(score: score, name: name, long: long, lat: lat)
     }
 
+    /* This method check the lowest score in the scores board */
     func checkLowestScore() {
         self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
             var recordsArr = snapshot.value as? [[String: Any]]
             var lowestScoreDic = recordsArr![recordsArr!.count - 1]
             self.lowestScore = lowestScoreDic["score"] as! Int
         })
+    }
+
+    /* This method save the user last score local on the device */
+    func saveLastScore(score: Int) {
+        let defaults = UserDefaults.standard
+        defaults.set(self.score, forKey: self.key)
     }
 
     // MARK: UICollectionViewDelegate
