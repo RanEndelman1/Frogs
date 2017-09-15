@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9910e1-2e5d-43c6-89e3-b316be17b9cc" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/1.jpg" afterPath="$PROJECT_DIR$/Frogs/images/1.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/10.jpg" afterPath="$PROJECT_DIR$/Frogs/images/10.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/11.jpg" afterPath="$PROJECT_DIR$/Frogs/images/11.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/12.jpg" afterPath="$PROJECT_DIR$/Frogs/images/12.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/2.jpg" afterPath="$PROJECT_DIR$/Frogs/images/2.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/3.jpg" afterPath="$PROJECT_DIR$/Frogs/images/3.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/4.jpg" afterPath="$PROJECT_DIR$/Frogs/images/4.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/5.jpg" afterPath="$PROJECT_DIR$/Frogs/images/5.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/6.jpg" afterPath="$PROJECT_DIR$/Frogs/images/6.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/7.jpg" afterPath="$PROJECT_DIR$/Frogs/images/7.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/8.jpg" afterPath="$PROJECT_DIR$/Frogs/images/8.jpg" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/9.jpg" afterPath="$PROJECT_DIR$/Frogs/images/9.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" afterPath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Frogs.xcodeproj/project.pbxproj" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,11 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_414dccd11b8d044c9f95e18609e69312e39647ee" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frogs/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+            <state relative-caret-position="152">
+              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -35,11 +47,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionViewController.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CollectionViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="226" column="14" lean-forward="false" selection-start-line="226" selection-start-column="14" selection-end-line="226" selection-end-column="14" />
+            <state relative-caret-position="269">
+              <caret line="213" column="31" lean-forward="false" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="31" />
               <folding>
                 <element signature="e#153#165#0" expanded="true" />
                 <element signature="e#1628#1766#0" expanded="false" />
@@ -50,9 +62,9 @@
                 <element signature="e#3588#4305#0" expanded="false" />
                 <element signature="e#4360#5305#0" expanded="false" />
                 <element signature="e#5659#6271#0" expanded="false" />
-                <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-                <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-                <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+                <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+                <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+                <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
               </folding>
             </state>
           </provider>
@@ -116,7 +128,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>cell</find>
       <find>ation.statusBarHid</find>
       <find>finishGame</find>
       <find>reus</find>
@@ -146,6 +157,7 @@
       <find>changeBackgroundImage()</find>
       <find>changeBackgroundImage(</find>
       <find>changeBackgroundImage</find>
+      <find>background</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -206,6 +218,12 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="Frogs" type="1d218c8b:XcodeProjectNode" />
               <item name="Frogs" type="fcab9f18:XcodeViewNode" />
+            </path>
+            <path>
+              <item name="" type="efc3779f:XcodeRootNode" />
+              <item name="Frogs" type="1d218c8b:XcodeProjectNode" />
+              <item name="Frogs" type="fcab9f18:XcodeViewNode" />
+              <item name="images" type="fcab9f18:XcodeViewNode" />
             </path>
             <path>
               <item name="" type="efc3779f:XcodeRootNode" />
@@ -285,29 +303,28 @@
       <workItem from="1504270721456" duration="56310000" />
       <workItem from="1505034081593" duration="13655000" />
       <workItem from="1505150931955" duration="118000" />
-      <workItem from="1505378851548" duration="12038000" />
+      <workItem from="1505378851548" duration="12232000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137308000" />
+    <option name="totallyTimeSpent" value="137502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30291262" sideWeight="0.1828125" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29647058" sideWeight="0.46319443" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446602" sideWeight="0.53680557" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29647058" sideWeight="0.46319443" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446602" sideWeight="0.53680557" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291262" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27572817" sideWeight="0.46041667" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -316,27 +333,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815534" sideWeight="0.1828125" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29647058" sideWeight="0.46319443" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29647058" sideWeight="0.53680557" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27572817" sideWeight="0.46041667" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -375,9 +371,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -414,9 +410,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -445,9 +441,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -517,9 +513,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -546,9 +542,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -592,9 +588,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -638,9 +634,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -677,9 +673,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -716,9 +712,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -747,9 +743,9 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
         </state>
       </provider>
@@ -856,18 +852,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="226" column="14" lean-forward="false" selection-start-line="226" selection-start-column="14" selection-end-line="226" selection-end-column="14" />
+        <state relative-caret-position="269">
+          <caret line="213" column="31" lean-forward="false" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="31" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
             <element signature="e#1628#1766#0" expanded="false" />
@@ -878,10 +866,18 @@
             <element signature="e#3588#4305#0" expanded="false" />
             <element signature="e#4360#5305#0" expanded="false" />
             <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484187000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484187000" expanded="false" signature="9322:10533" ph="..." />
+            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
+            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
