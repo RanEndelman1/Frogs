@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import MapKit
 import CoreLocation
+import FirebaseDatabase
 
 class CollectionViewController: UICollectionViewController, CLLocationManagerDelegate {
 
@@ -24,8 +25,10 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     private var db: DataBase?
     private let locationManager = CLLocationManager()
     private var currLocation: CLLocation!
+    private var ref: DatabaseReference!
     var rotation: CGFloat = CGFloat.pi
     var usersImage: UIImage?
+    var lowestScore: Int = -1
 
     @IBOutlet weak var gameTitle: UINavigationItem!
 
@@ -33,6 +36,10 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         super.viewDidLoad()
 
         db = DataBase()
+
+        self.ref = Database.database().reference()
+
+        checkLowestScore()
 
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
 
@@ -135,12 +142,6 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         print("The hits is :" + String(hits))
     }
 
-    /* This method return back to the root viewController */
-    func finishGame(name: String) {
-        insertScore(score: score, name: name, long: self.currLocation.coordinate.longitude, lat: self.currLocation.coordinate.latitude)
-        self.dismiss(animated: true)
-    }
-
     /* This method called by timer count down the time for the game */
     func updateCounter() {
         if hits < 0 {
@@ -164,27 +165,33 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         time -= 1
     }
 
-    /* This method generate and show no more hits alert and call insert to DB method */
+    /* This method generate and show the no more hits alert and call insert to DB method */
     func showEndOfGameAlert(title: String) {
         let alertController = UIAlertController(title: title, message: "Your score is: \(score)", preferredStyle: .alert)
-
-        let saveAction = UIAlertAction(title: "Save", style: .default, handler: {
-            alert -> Void in
-
-            let firstTextField = alertController.textFields![0] as UITextField
-            self.finishGame(name: firstTextField.text!)
-
-        })
-//        HERE SHOULD BE CONDITION IF THE SCORE GOOD ENOUGH FOR THE RECORD TABLE
-        alertController.addTextField { (textField: UITextField!) -> Void in
-            textField.placeholder = "Enter Your Name"
+        if score > self.lowestScore {
+            let saveAction = UIAlertAction(title: "Save", style: .default, handler: {
+                alert -> Void in
+                let firstTextField = alertController.textFields![0] as UITextField
+                self.finishGame(name: firstTextField.text!)
+            })
+            alertController.addTextField { (textField: UITextField!) -> Void in
+                textField.placeholder = "Enter Your Name"
+            }
+            alertController.addAction(saveAction)
+        } else {
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: {
+                alert -> Void in
+                self.finishGame(name: "")
+            })
+            alertController.addAction(okAction)
         }
-
-        alertController.addAction(saveAction)
-
-
         self.present(alertController, animated: true, completion: nil)
+    }
 
+    /* This method return back to the root viewController */
+    func finishGame(name: String) {
+        insertScore(score: score, name: name, long: self.currLocation.coordinate.longitude, lat: self.currLocation.coordinate.latitude)
+        self.dismiss(animated: true)
     }
 
     /* This method determine if the cell clicked contain frog image */
@@ -239,6 +246,14 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     /* This method calls DB class API */
     func insertScore(score: Int, name: String, long: Double, lat: Double) {
         db?.insertScore(score: score, name: name, long: long, lat: lat)
+    }
+
+    func checkLowestScore() {
+        self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
+            var recordsArr = snapshot.value as? [[String: Any]]
+            var lowestScoreDic = recordsArr![recordsArr!.count - 1]
+            self.lowestScore = lowestScoreDic["score"] as! Int
+        })
     }
 
     // MARK: UICollectionViewDelegate
