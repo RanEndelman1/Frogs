@@ -24,6 +24,7 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     private var db: DataBase?
     private let locationManager = CLLocationManager()
     private var currLocation: CLLocation!
+    var rotation: CGFloat = CGFloat.pi
     var usersImage: UIImage?
 
     @IBOutlet weak var gameTitle: UINavigationItem!
@@ -79,8 +80,7 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         } else {
             if randomNumber <= 4 {
                 image = self.usersImage
-            }
-            else {
+            } else {
                 image = UIImage(named: String(randomNumber) + ".jpg")
             }
         }
@@ -196,27 +196,35 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
     func changeBackgroundImage() {
         for cell in collectionView?.visibleCells as! [UICollectionViewCell] {
             cell.isUserInteractionEnabled = true
-            var randomNumber = Int(arc4random_uniform(12) + 1)
-            var image: UIImage?
-            if self.usersImage == nil {
-                image = UIImage(named: String(randomNumber) + ".jpg")
-            } else {
-                if randomNumber <= 4 {
-                    image = self.usersImage
-                }
-                else {
+            UIView.animate(withDuration: 0.05, animations: ({
+                cell.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi)
+                var randomNumber = Int(arc4random_uniform(12) + 1)
+                var image: UIImage?
+                if self.usersImage == nil {
                     image = UIImage(named: String(randomNumber) + ".jpg")
+                } else {
+                    if randomNumber <= 4 {
+                        image = self.usersImage
+                    } else {
+                        image = UIImage(named: String(randomNumber) + ".jpg")
+                    }
                 }
-            }
-            let imageView = UIImageView(image: image!)
-            imageView.image = image
-            cell.backgroundView = imageView
-            // To determine if it is a frog pic
-            if randomNumber <= 4 {
-                cell.alpha = 100
-            } else {
-                cell.alpha = 99
-            }
+                let imageView = UIImageView(image: image!)
+                imageView.image = image
+                cell.backgroundView = imageView
+                // To determine if it is a frog pic
+                if randomNumber <= 4 {
+                    cell.alpha = 100
+                } else {
+                    cell.alpha = 99
+                }
+            }), completion: {
+                (value: Bool) in
+                UIView.animate(withDuration: 0.05, animations: {
+                    cell.transform = CGAffineTransform.init(rotationAngle: 2 * CGFloat.pi)
+
+                }, completion: nil)
+            })
         }
     }
 
