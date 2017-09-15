@@ -13,7 +13,6 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
 
     private var usersImage: UIImage?
 
-
     @IBAction func uploadPicButton(_ sender: UIButton) {
         let image = UIImagePickerController()
         image.delegate = self

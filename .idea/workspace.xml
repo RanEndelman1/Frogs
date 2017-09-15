@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db9910e1-2e5d-43c6-89e3-b316be17b9cc" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/1.jpg" afterPath="$PROJECT_DIR$/Frogs/images/1.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/10.jpg" afterPath="$PROJECT_DIR$/Frogs/images/10.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/11.jpg" afterPath="$PROJECT_DIR$/Frogs/images/11.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/12.jpg" afterPath="$PROJECT_DIR$/Frogs/images/12.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/2.jpg" afterPath="$PROJECT_DIR$/Frogs/images/2.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/3.jpg" afterPath="$PROJECT_DIR$/Frogs/images/3.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/4.jpg" afterPath="$PROJECT_DIR$/Frogs/images/4.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/5.jpg" afterPath="$PROJECT_DIR$/Frogs/images/5.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/6.jpg" afterPath="$PROJECT_DIR$/Frogs/images/6.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/7.jpg" afterPath="$PROJECT_DIR$/Frogs/images/7.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/8.jpg" afterPath="$PROJECT_DIR$/Frogs/images/8.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Frogs/Assets.xcassets/9.jpg" afterPath="$PROJECT_DIR$/Frogs/images/9.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/Frogs.xcodeproj/project.pbxproj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" afterPath="$PROJECT_DIR$/Frogs/CollectionViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frogs/ViewController.swift" afterPath="$PROJECT_DIR$/Frogs/ViewController.swift" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,12 +16,18 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_414dccd11b8d044c9f95e18609e69312e39647ee" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frogs/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="266">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding>
+                <element signature="e#309#597#0" expanded="false" />
+                <element signature="e#603#1011#0" expanded="false" />
+                <element signature="e#1017#1317#0" expanded="false" />
+                <element signature="e#1323#1469#0" expanded="false" />
+                <element signature="e#1475#1764#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,24 +42,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CollectionViewController.swift" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CollectionViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="213" column="31" lean-forward="false" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="31" />
+            <state relative-caret-position="259">
+              <caret line="168" column="43" lean-forward="false" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
               <folding>
                 <element signature="e#153#165#0" expanded="true" />
-                <element signature="e#1628#1766#0" expanded="false" />
-                <element signature="e#1772#1918#0" expanded="false" />
-                <element signature="e#1997#2185#0" expanded="false" />
-                <element signature="e#2262#2481#0" expanded="false" />
-                <element signature="e#2550#3512#0" expanded="false" />
-                <element signature="e#3588#4305#0" expanded="false" />
-                <element signature="e#4360#5305#0" expanded="false" />
-                <element signature="e#5659#6271#0" expanded="false" />
-                <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-                <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-                <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+                <element signature="e#1802#1940#0" expanded="false" />
+                <element signature="e#1946#2092#0" expanded="false" />
+                <element signature="e#2171#2359#0" expanded="false" />
+                <element signature="e#2436#2655#0" expanded="false" />
+                <element signature="e#2724#3686#0" expanded="false" />
+                <element signature="e#3762#4479#0" expanded="false" />
+                <element signature="e#4534#5479#0" expanded="false" />
+                <element signature="e#5556#6168#0" expanded="false" />
+                <element signature="e#6266#7269#0" expanded="false" />
+                <element signature="e#7336#7546#0" expanded="false" />
+                <element signature="e#7623#7780#0" expanded="false" />
+                <element signature="e#7889#9316#0" expanded="false" />
+                <element signature="e#9582#9731#0" expanded="false" />
+                <element signature="e#9737#10064#0" expanded="false" />
+                <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+                <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
               </folding>
             </state>
           </provider>
@@ -73,13 +73,12 @@
       <file leaf-file-name="RecordsViewController.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frogs/RecordsViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="59" />
+            <state relative-caret-position="242">
+              <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="57" selection-end-column="10" />
               <folding>
                 <element signature="e#150#162#0" expanded="true" />
                 <element signature="e#786#1002#0" expanded="false" />
                 <element signature="e#1008#1669#0" expanded="false" />
-                <element signature="e#1675#1910#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -101,8 +100,8 @@
       <file leaf-file-name="DataBase.swift" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Frogs/DataBase.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="399">
+              <caret line="24" column="86" lean-forward="false" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
               <folding>
                 <element signature="e#105#128#0" expanded="true" />
                 <element signature="e#240#306#0" expanded="false" />
@@ -112,25 +111,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppDelegate.swift" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding>
-                <element signature="e#142#154#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>ation.statusBarHid</find>
-      <find>finishGame</find>
-      <find>reus</find>
       <find>headerView</find>
       <find>NSIndexPath</find>
       <find>score</find>
@@ -158,6 +142,9 @@
       <find>changeBackgroundImage(</find>
       <find>changeBackgroundImage</find>
       <find>background</find>
+      <find>should</find>
+      <find>ref</find>
+      <find>self.ref</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,16 +205,6 @@
               <item name="" type="efc3779f:XcodeRootNode" />
               <item name="Frogs" type="1d218c8b:XcodeProjectNode" />
               <item name="Frogs" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Frogs" type="1d218c8b:XcodeProjectNode" />
-              <item name="Frogs" type="fcab9f18:XcodeViewNode" />
-              <item name="images" type="fcab9f18:XcodeViewNode" />
-            </path>
-            <path>
-              <item name="" type="efc3779f:XcodeRootNode" />
-              <item name="Pods" type="1d218c8b:XcodeProjectNode" />
             </path>
           </expand>
           <select />
@@ -303,15 +280,16 @@
       <workItem from="1504270721456" duration="56310000" />
       <workItem from="1505034081593" duration="13655000" />
       <workItem from="1505150931955" duration="118000" />
-      <workItem from="1505378851548" duration="12232000" />
+      <workItem from="1505378851548" duration="14548000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137502000" />
+    <option name="totallyTimeSpent" value="139818000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30291262" sideWeight="0.1828125" order="7" side_tool="false" content_ui="tabs" />
@@ -321,7 +299,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2446602" sideWeight="0.53680557" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291262" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
@@ -342,7 +320,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="37" />
+      <option name="time" value="38" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -363,17 +341,22 @@
           <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -382,37 +365,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#142#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -433,17 +391,58 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#142#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#153#165#0" expanded="true" />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -505,17 +504,22 @@
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -524,7 +528,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -534,17 +544,22 @@
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -553,7 +568,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -580,17 +601,22 @@
           <caret line="18" column="28" lean-forward="false" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -599,7 +625,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -626,17 +658,22 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -645,7 +682,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
+          <folding>
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -665,17 +708,22 @@
           <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -684,37 +732,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="38" lean-forward="false" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#142#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,17 +758,58 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#142#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#153#165#0" expanded="true" />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
         </state>
       </provider>
@@ -798,28 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#154#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/DataBase.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#105#128#0" expanded="true" />
-            <element signature="e#240#306#0" expanded="false" />
-            <element signature="e#620#1683#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Frogs/Record.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -839,45 +881,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/ViewController.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="e#309#597#0" expanded="false" />
+            <element signature="e#603#1011#0" expanded="false" />
+            <element signature="e#1017#1317#0" expanded="false" />
+            <element signature="e#1323#1469#0" expanded="false" />
+            <element signature="e#1475#1764#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Frogs/RecordsViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="59" />
+        <state relative-caret-position="242">
+          <caret line="54" column="8" lean-forward="false" selection-start-line="54" selection-start-column="8" selection-end-line="57" selection-end-column="10" />
           <folding>
             <element signature="e#150#162#0" expanded="true" />
             <element signature="e#786#1002#0" expanded="false" />
             <element signature="e#1008#1669#0" expanded="false" />
-            <element signature="e#1675#1910#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/AppDelegate.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding>
+            <element signature="e#142#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frogs/DataBase.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="86" lean-forward="false" selection-start-line="24" selection-start-column="86" selection-end-line="24" selection-end-column="86" />
+          <folding>
+            <element signature="e#105#128#0" expanded="true" />
+            <element signature="e#240#306#0" expanded="false" />
+            <element signature="e#620#1683#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frogs/CollectionViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="213" column="31" lean-forward="false" selection-start-line="213" selection-start-column="21" selection-end-line="213" selection-end-column="31" />
+        <state relative-caret-position="259">
+          <caret line="168" column="43" lean-forward="false" selection-start-line="168" selection-start-column="43" selection-end-line="168" selection-end-column="43" />
           <folding>
             <element signature="e#153#165#0" expanded="true" />
-            <element signature="e#1628#1766#0" expanded="false" />
-            <element signature="e#1772#1918#0" expanded="false" />
-            <element signature="e#1997#2185#0" expanded="false" />
-            <element signature="e#2262#2481#0" expanded="false" />
-            <element signature="e#2550#3512#0" expanded="false" />
-            <element signature="e#3588#4305#0" expanded="false" />
-            <element signature="e#4360#5305#0" expanded="false" />
-            <element signature="e#5659#6271#0" expanded="false" />
-            <marker date="1505484257000" expanded="false" signature="8971:9124" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9241:9320" ph="{...}" />
-            <marker date="1505484257000" expanded="false" signature="9322:10533" ph="..." />
+            <element signature="e#1802#1940#0" expanded="false" />
+            <element signature="e#1946#2092#0" expanded="false" />
+            <element signature="e#2171#2359#0" expanded="false" />
+            <element signature="e#2436#2655#0" expanded="false" />
+            <element signature="e#2724#3686#0" expanded="false" />
+            <element signature="e#3762#4479#0" expanded="false" />
+            <element signature="e#4534#5479#0" expanded="false" />
+            <element signature="e#5556#6168#0" expanded="false" />
+            <element signature="e#6266#7269#0" expanded="false" />
+            <element signature="e#7336#7546#0" expanded="false" />
+            <element signature="e#7623#7780#0" expanded="false" />
+            <element signature="e#7889#9316#0" expanded="false" />
+            <element signature="e#9582#9731#0" expanded="false" />
+            <element signature="e#9737#10064#0" expanded="false" />
+            <marker date="1505488093000" expanded="false" signature="9382:9535" ph="{...}" />
+            <marker date="1505488093000" expanded="false" signature="10065:11277" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frogs/ViewController.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="28" column="54" lean-forward="false" selection-start-line="28" selection-start-column="54" selection-end-line="28" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
