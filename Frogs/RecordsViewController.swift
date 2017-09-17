@@ -22,6 +22,9 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
         super.viewDidLoad()
         self.ref = Database.database().reference()
         getRecordsDic()
+        self.tableView.center = self.view.center
+        self.view.addSubview(self.tableView)
+        self.tableView.backgroundColor = UIColor.clear
     }
 
     override func didReceiveMemoryWarning() {
@@ -40,7 +43,8 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
     /* This override method set the text for each row in the records table */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mycell")
-
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.textColor = UIColor.green
         if self.recordsArr == nil {
             cell.textLabel!.text = ""
         } else {
