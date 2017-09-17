@@ -20,6 +20,7 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
         self.setLatAndLong()
     }
 
+    /* This method set the map to the specific lat and long */
     func setLatAndLong() {
         self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
             var arr = snapshot.value as? [[String: Any]]
