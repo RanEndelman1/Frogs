@@ -34,6 +34,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         self.view.insertSubview(backgroundImage, at: 0)
     }
 
+    /* This override method set the behavior of the image selector */
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String: Any]) {
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             self.usersImage = image
@@ -46,6 +47,7 @@ class ViewController: UIViewController, UINavigationControllerDelegate, UIImageP
         // Dispose of any resources that can be recreated.
     }
 
+    /* This method prepare the segue for game */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "startGameSegue" {
             var collectionViewController = segue.destination as! CollectionViewController

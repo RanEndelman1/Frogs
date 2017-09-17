@@ -5,9 +5,9 @@
 
 import Foundation
 
+/* Record Class for FireBase usage with dictionary */
 class Record {
     var dict: [String: Any]
-//    TO DO: add location field
 
     init(score: Int, name: String, long: Double, lat: Double) {
         self.dict = ["score": score, "name": name, "long": long, "lat": lat]

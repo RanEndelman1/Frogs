@@ -28,6 +28,7 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
         super.didReceiveMemoryWarning()
     }
 
+    /* This override method return number of rows in the records table */
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if self.recordsArr == nil {
             return 1
@@ -36,14 +37,13 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
         }
     }
 
+    /* This override method set the text for each row in the records table */
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell: UITableViewCell = UITableViewCell(style: UITableViewCellStyle.subtitle, reuseIdentifier: "mycell")
 
         if self.recordsArr == nil {
             cell.textLabel!.text = ""
         } else {
-//            var currKey = "\(sortedKeysInt[indexPath.row])"
-//            var player = self.recordsDic?[currKey] as? String
             var currDic: [String: Any] = recordsArr[indexPath.row]
             cell.textLabel!.text = "\(indexPath.row + 1). " + "\(currDic["score"]!)" + " Points By: " + "\(currDic["name"]!)"
         }
@@ -51,20 +51,22 @@ class RecordsViewController: UIViewController, UITableViewDataSource, UITableVie
         return cell
     }
 
+    /* This method get the records list from the FireBase */
     func getRecordsDic() {
         self.ref.child("highScores").observeSingleEvent(of: .value, with: { (snapshot) in
             self.recordsArr = snapshot.value as? [[String: Any]]
             self.tableView.reloadData()
         })
-
     }
 
+    /* This override method handle click on row in the records table */
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         self.clickedRow = indexPath.row
         performSegue(withIdentifier: "segue", sender: self)
 
     }
 
+    /* This method prepare the segue for the map view of specific record */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if clickedRow != -1 {
             var mapViewController = segue.destination as! MapViewController
