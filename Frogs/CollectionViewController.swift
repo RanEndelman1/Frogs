@@ -15,7 +15,7 @@ import FirebaseDatabase
 class CollectionViewController: UICollectionViewController, CLLocationManagerDelegate {
 
     private let reuseIdentifier = "cell"
-    private let numberOfCells = 15
+    private let numberOfCells = 18
     private let numOfSections = 1
     private var score = 0
     private var hits = 3
@@ -68,7 +68,6 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
 
     /* This method determine number of Sections in the CollectionView */
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return numOfSections
     }
 
@@ -101,6 +100,8 @@ class CollectionViewController: UICollectionViewController, CLLocationManagerDel
         } else {
             cell.alpha = 99
         }
+        cell.layer.borderWidth = 2.0
+        cell.layer.borderColor = UIColor.green.cgColor
         return cell
     }
 

@@ -9,6 +9,7 @@ import CoreLocation
 import FirebaseDatabase
 
 class MapViewController: UIViewController, CLLocationManagerDelegate {
+    @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var map: MKMapView!
     let manager = CLLocationManager()
     private var ref: DatabaseReference!
@@ -36,6 +37,8 @@ class MapViewController: UIViewController, CLLocationManagerDelegate {
             annotation.coordinate = CLLocationCoordinate2D(latitude: lat, longitude: long)
             self.map.addAnnotation(annotation)
             self.map.showsCompass = true
+            self.map.center = self.view.center
+            self.view.addSubview(self.map)
         }) { (error) in
             print(error.localizedDescription)
         }
